@@ -17,6 +17,18 @@
 
 所有交互页通过本地服务以 `http://127.0.0.1:PORT/` 打开（只监听回环地址），确认动作直接把文件写进项目目录，不需要下载搬运。
 
+## 安装
+
+一键安装（WorkBuddy / CodeBuddy，点开即装）：
+
+```
+workbuddy://codebuddy-ide/skill/install?skillname=double-materiality-assessment&channelType=link&downloadurl=https%3A%2F%2Fcodeload.github.com%2F707292385-byte%2Fdouble-materiality-assessment%2Fzip%2Frefs%2Fheads%2Fmain
+```
+
+手动安装：下载仓库 ZIP，解压后把文件夹改名为 `double-materiality-assessment`（必须与 `SKILL.md` 顶部的 `name` 一致），放到 `~/.workbuddy/skills/` 下即可。
+
+运行环境：Python 3.9+，脚本只用标准库。两项可选依赖——飞书自动建问卷需要本机装有 `lark-cli` 且已登录（否则走问卷星半自动），读取 `.xlsx` 答卷需要 `openpyxl`（改用 CSV 则不需要）。
+
 ## 快速开始
 
 ```bash
